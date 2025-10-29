@@ -6,6 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desktop4</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!----- Google Fonts ----->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <style type="text/tailwindcss">
+    @theme {
+          --font-Righteous: "Righteous", cursive, system-ui;
+          --font-Rowdies: "Rowdies", cursive, system-ui;
+          --font-Saira: "Saira", cursive, system-ui;
+        }
+      </style>
+
 </head>
 
 <body class="bg-[#FFFFFF]">
@@ -14,7 +30,7 @@
       <div class="max-w-7xl mx-auto px-6 py-1 sm:py-6 lg:py-1">
         <div class="grid grid-cols-4 items-center">
           <div><a href="" class="flex items-center gap-4"><img src="./images/logo.svg" /> </a></div>
-          <nav class="flex justify-center gap-8">
+          <nav class="flex justify-center gap-8 font-Righteous text-[20px]">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Courses</a>
@@ -26,11 +42,13 @@
             <a href=""><img src="./images/Icon3.svg" /></a>
           </div>
 
-          <div class="flex justify-end gap-4">
-            <button><a href="" class="text-#fffff hover:text-blue text-underline-offset-1">Login</a>
+          <div class="flex justify-center justify-end py-10 gap-6">
+            <button class="font-Saira text-[20px] text-[#4b4b4b]">
+              <a href="#" class="item-center rounded-xl gap-2 px-4 py-2 underline">Login</a>
             </button>
-            <button><a href=""
-                class="item-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 text-white-900 mx-auto px-2 py-2 font-semibold shadow/40 shadow-black/20 hover:bg-white">Signup</a>
+            <button class="font-Saira text-[20px]">
+              <a href="#" Advance PHP knowledge with JS to
+                class="item-center rounded-xl gap-2 px-5 py-3 text-white shadow/40 shadow-black/20 bg-gradient-to-br from-[#481dbb] to-[#6953cd] to-[#4c2ab1]">Signup</a>
             </button>
           </div>
         </div>
@@ -40,14 +58,16 @@
     <main class="relative">
       <div class="max-w-7xl mx-auto px-4">
         <section class="grid grid-cols-2 py-14 lg:py-24">
-          <img src="./images/Rectangle 8675.svg" alt="user"
-            class="w-14 h-14 absolute my-140 mx-140 border-2 border-white">
+          <img src="./images/Rectangle.png" alt="user" class="w-30 h-14 absolute my-130 mx-160 ">
           <div>
-            <p class="text-white text-sm">SUCCESFUL COACHES ARE VISIONARIES</p>
-            <h1 class="mt-4 text-4xl lg:text-6xl font-extrabold leading-tight text-white">
+            <p class="text-white text-sm font-Righteous text-[18] decoration-white">SUCCESSFUL COACHES ARE VISIONARIES
+            </p>
+            <h1 class="mt-4 text-4xl lg:text-6xl font-extrabold leading-tight text-white font-Righteous text-[80]">
               Good
-              <span class="bg-blue-500 bg-clip-text font-extrabold text-transparent">coaching</span> <br />
-              is good teaching $<br />
+              <span
+                class="bg-blue-500 bg-clip-text font-extrabold text-transparent font-Righteous text-[80]">coaching</span>
+              <br />
+              is good teaching &<br />
               nothing else.
             </h1>
             <div class="mt-8 flex flex-wrap gap-2">
@@ -58,29 +78,41 @@
                 Consultation</a>
             </div>
             <!-- Search -->
-            <div class="mt-8 px-2 flex items-stretch rounded-2xl ring-1 bg-white p-1 w-xl">
+            <div class="mt-8 flex items-stretch w-[489px] h-[70px] rounded-md bg-white mb-10">
               <input type="text" placeholder="What do you want to learn today?"
-                class="w-full bg-transparent px-2 py-3 placeholder-indigo-900 focus:outline-none" />
+                class="w-full bg-transparent px-4 py-3 placeholder-[#65698c] font-Righteous focus:outline-none" />
               <button
-                class="ml-1 inline-flex items-center gap-2 rounded-xl text-white bg-linear-to-br from-[#3023B2] to-[#7F56D9] px-5 py-2 font-semibold">
-                Search
+                class="flex flex-cols-2 gap-3 items-center ml-1 inline-flex items-center rounded-xl gap-2 bg-[#573dc5] px-7 my-2 mx-3 text-white">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                </span>
+                <span>Search</span>
               </button>
-
             </div>
           </div>
-          <div class="relative">
-            <div class="absolute w-[300px] z-1">
-              <h1 class="text-white text-sm">Shyam</h1>
-              <p class="text-white text-sm">In a coaching you ask the <br /> questions rely more on your <br />staff,
-                who
-                become the experts, to <br /> provide the information</p>
-              <h1 class="text-blue-500 bg-transparent ">4.9</h1>
+          <div class="relative ml-15">
+            <div class="relative">
+              <div class="flex flex-cols-2 gap-9 text-white w-[350px] h-[158px] absolute [1] mt-30">
+                <img src="Images/Group 1000014970.png" alt="" />
+                <div class="items-stretch w-[200px] h-[70px]">
+                  <h1 class="font-Righteous text-[16px]">Shyam</h1>
+                  <p class="font-Righteous text-[16px]">
+                    In a coaching role, you ask the questions and rely more on
+                    your staff, who become the experts, to provide the
+                    information.
+                  </p>
+                  <span class="text-[#0a98e8] mt-3">4.9</span>
+                </div>
+              </div>
+              <div class="absolute">
+                <img src="Images/elipse.png" alt="" class="w-[1000px] h-[900px] ml-15" />
+              </div>
             </div>
-            <div class="relative w-[300px] h-[500px] ml-60 bg-transparent">
-              <div
-                class="absolute w-80 h-80 bg-gradient-to-br from-blue-300 to-purple-100 rounded-full blur-4xl opacity-80 ">
-              </div><img src="./images/brunette-woman-hugging-laptop 1.png"
-                class="w-64 h-auto mix-blend-screen bg-gradient-to-r from-blue-800 to-purple-800" />
+            <div class="absolute pl-[250px] z-[1] mr-10 mt-14">
+              <img class="w-[558] h-[922]" src="Images/w-1.png" alt="" />
             </div>
           </div>
         </section>
@@ -90,7 +122,7 @@
   <hero>
     <div class="max-w-7xl mx-auto opacity-80 bg-gradient-to-bl from-[#2E08C7] via-[#2E08C7] to-[#7E08C7]">
       <div class="max-w-7xl mx-auto px-6 py-8 sm:py-6 lg:py-8">
-        <div class="flex flex-cols-6 justify-center items-center gap-13">
+        <div class="flex flex-cols-6 justify-center items-center gap-35">
           <img src="./images/spotify.png" alt="Spotify" class="h-6">
           <img src="./images/amazon.png" alt="Amazon" class="h-6">
           <img src="./images/spotify.png" alt="Spotify" class="h-6">
@@ -105,27 +137,33 @@
   </hero>
 </body>
 <section>
-  <div class="w-full max-w-7xl bg-[#D9D9D9] items-center mx-auto">
+  <div class="w-full max-w-7xl bg-[#ecf5ff] mx-auto">
     <!-- Title Section -->
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-      <img src="./images/Ellipse 118.png" class="mt=5 left-20 item-center" />
-      <div class="text-center mb-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
-          Featured <span class="text-blue-600">Course</span>
-        </h2>
-        <p class="text-gray-500 mt-2 text-sm md:text-base">
-          THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART
+    <div class="grid grid-cols-4">
+      <div class="grid col-span-1">
+        <img src="Images/Ellipse 118.png" alt="" class="my-20 mx-50" />
+      </div>
+      <div class="grid col-span-3">
+        <h1 class="font-Rowdies text-[45px] ml-77 flex self-end">
+          Featured <span class="text-[#4883ff] ml-3">Course</span>
+        </h1>
+        <p class="font-Rowdies text-[25px] ml-10 uppercase tracking-wide tracking-widest text[#323233]">
+          The feature courses are we invented our teaching part
         </p>
       </div>
     </div>
 
     <!-- Grid Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 px-5 gap-4 items-center">
+    <div class="grid grid-cols-3 grid-rows-2 gap-y-[90px] gap-x-[49px] mx-35 my-15">
 
       <!-- Card 1 -->
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition row-span-1 font-Saira text-[14px] ">
         <img src="./images/Mask group.png" alt="Course" class="rounded-xl mb-4">
-        <p class="text-gray-500 text-sm">1,957 Students</p>
+        <div class="grid grid-cols-2 py-7">
+          <span class="pl-5">1,957 Students</span>
+          <span class="font-Saira text-[14px] flex justify-end pr-10">01h 59m</span>
+        </div>
+
         <h3 class="font-semibold text-gray-800 mt-1">Motion Graphics: Create a Nice Typography Animation</h3>
         <div class="flex justify-between items-center mt-3">
           <span class="text-gray-800 font-semibold">Rs.499</span>
@@ -136,9 +174,12 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition font-Saira text-[14px]">
         <img src="./images/Mask group (1).png" alt="Course" class="rounded-xl mb-4">
-        <p class="text-gray-500 text-sm">9,575 Students</p>
+        <div class="grid grid-cols-2 py-7">
+          <span class="pl-5">9,575 Students</span>
+          <span class="font-Saira text-[14px] flex justify-end pr-10">01h 59m</span>
+        </div>
         <h3 class="font-semibold text-gray-800 mt-1">Advance PHP knowledge with JS to make smart web</h3>
         <div class="flex justify-between items-center mt-3">
           <span class="text-gray-800 font-semibold">Rs.499</span>
@@ -149,9 +190,12 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition font-Saira text-[14px]">
         <img src="./images/Mask group (2).png" alt="Course" class="rounded-xl mb-4">
-        <p class="text-gray-500 text-sm">2,957 Students</p>
+        <div class="grid grid-cols-2 py-7">
+          <span class="pl-5">2957 Students</span>
+          <span class="font-Saira text-[14px] flex justify-end pr-10">02h 49m</span>
+        </div>
         <h3 class="font-semibold text-gray-800 mt-1">Education Software and PHP and JS System Script</h3>
         <div class="flex justify-between items-center mt-3">
           <span class="text-gray-800 font-semibold">Rs.499</span>
@@ -162,9 +206,12 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition font-Saira text-[14px]">
         <img src="./images/Mask group (3).png" alt="Course" class="rounded-xl mb-4">
-        <p class="text-gray-500 text-sm">5,457 Students</p>
+        <div class="grid grid-cols-2 py-7">
+          <span class="pl-5">5,457 Students</span>
+          <span class="font-Saira text-[14px] flex justify-end pr-10">01h 49m</span>
+        </div>
         <h3 class="font-semibold text-gray-800 mt-1">The Complete Financial Analyst Training & Investing</h3>
         <div class="flex justify-between items-center mt-3">
           <span class="text-gray-800 font-semibold">Rs.499</span>
@@ -175,9 +222,12 @@
       </div>
 
       <!-- Card 5 -->
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition font-Saira text-[14px]">
         <img src="./images/Mask group (4).png" alt="Course" class="rounded-xl mb-4">
-        <p class="text-gray-500 text-sm">595 Students</p>
+        <div class="grid grid-cols-2 py-7">
+          <span class="pl-5">595 Students</span>
+          <span class="font-Saira text-[14px] flex justify-end pr-10">01h 49m</span>
+        </div>
         <h3 class="font-semibold text-gray-800 mt-1">Marketing 2023: Complete Guide To Instagram Growth</h3>
         <div class="flex justify-between items-center mt-3">
           <span class="text-gray-800 font-semibold">Rs.499</span>
@@ -188,9 +238,12 @@
       </div>
 
       <!-- Card 6 -->
-      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg p-4 transition font-Saira text-[14px]">
         <img src="./images/Mask group (5).png" alt="Course" class="rounded-xl mb-4">
-        <p class="text-gray-500 text-sm">458 Students</p>
+        <div class="grid grid-cols-2 py-7">
+          <span class="pl-5">458 Students</span>
+          <span class="font-Saira text-[14px] flex justify-end pr-10">03h 00m</span>
+        </div>
         <h3 class="font-semibold text-gray-800 mt-1">Learn 3D Modelling and Design for Beginners</h3>
         <div class="flex justify-between items-center mt-3">
           <span class="text-gray-800 font-semibold">Rs.499</span>
@@ -198,71 +251,76 @@
             🛒
           </button>
         </div>
-      </div>
 
+      </div>
+      <button
+        class=" px-10 py-5 mx-100  rounded-2xl bg-gradient-to-br from-[#1341a1] to-[#6651cc] text-white h-[60px] w-[200px]  font-Righteous text-[20]">
+        Explore courses
+      </button>
     </div>
   </div>
 
-
-
 </section>
-<section class="bg-gradient-to-r from-blue-400 to-purple-600 text-white py-16 px-6">
-  <div class="max-w-6xl mx-auto text-center">
 
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-      Why <span class="text-blue-200">learn</span> with our courses?
-    </h2>
-    <p class="text-gray-100 max-w-2xl mx-auto text-sm md:text-base">
-      We are providing the best courses and top classes. And extraordinary placement training…..
-    </p>
+<section class="bg-gradient-to-r from-[#739FE8] to-[#4F18CA] text-white py-16 px-6 w-full max-w-7xl  h-[600px]">
+  <div class=" grid grid-rows-2 ">
+    <div class="grid place-items-center">
 
-    <!-- Features Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+      <!-- Heading -->
+      <h1 class="font-Righteous text-[45px] h-[60px] w-[656px] mx-auto mt-20 text-center">
+        Why <span class="text-[#0e38cd]">learn</span> with our courses?
+      </h1>
+      <p class="w-[600px] h-[70px] font-Saira text-[20px] mb-5 text-center">
+        We are providing the best courses and top classes.And
+        extradinery placement training.....
+      </p>
 
-      <!-- Feature 1 -->
-      <div class="flex flex-col items-center text-center">
-        <div class="bg-white/10 p-6 rounded-full mb-4">
-          <img src="./images/Vector (3).svg" />
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12 font-Righteous">
+
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-white/10 p-6 rounded-full mb-4">
+            <img src="./images/Vector (3).svg" />
+          </div>
+          <h1 class="text-[25px]">01. Learn</h1>
+          <p class="text-gray-200 text-sm mt-2 w-[230px] ">
+            Learn continually. There is always one more thing to learn.
+          </p>
         </div>
-        <h3 class="font-semibold text-lg">01. Learn</h3>
-        <p class="text-gray-200 text-sm mt-2">
-          Learn continually. There is always one more thing to learn.
-        </p>
-      </div>
 
-      <!-- Feature 2 -->
-      <div class="flex flex-col items-center text-center">
-        <div class="bg-white/10 p-6 rounded-full mb-4">
-          <img src="./images/Vector (4).svg" />
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-white/10 p-6 rounded-full mb-4">
+            <img src="./images/Vector (4).svg" />
+          </div>
+          <h1 class="text-[25px]">02. Graduate</h1>
+          <p class="text-gray-200 text-sm mt-2 w-[230px] ">
+            Be bold, be courageous, be your best.
+          </p>
         </div>
-        <h3 class="font-semibold text-lg">02. Graduate</h3>
-        <p class="text-gray-200 text-sm mt-2">
-          Be bold, be courageous, be your best.
-        </p>
-      </div>
 
-      <!-- Feature 3 -->
-      <div class="flex flex-col items-center text-center">
-        <div class="bg-white/10 p-6 rounded-full mb-4">
-          <img src="./images/Vector (5).svg" />
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-white/10 p-6 rounded-full mb-4">
+            <img src="./images/Vector (5).svg" />
+          </div>
+          <h1 class="text-[25px]">03. Work</h1>
+          <p class="text-gray-200 text-sm mt-2 w-[230px] ">
+            Great companies are built in the office, with hard work put in by team.
+          </p>
         </div>
-        <h3 class="font-semibold text-lg">03. Work</h3>
-        <p class="text-gray-200 text-sm mt-2">
-          Great companies are built in the office, with hard work put in by team.
-        </p>
       </div>
-
     </div>
   </div>
 </section>
 <div class="bg-gradient-to-br from-[#D9ECFF] to-[#D9ECFF] w-full max-w-7xl mx-auto bg-white-500">
   <!-- Heading -->
-  <div class="text-center mb-20">
-    <h2 class="mt-20 text-3xl md:text-4xl font-bold text-gray-800">
-      Top <span class="text-blue-600">Categories</span>
-    </h2>
-    <p class="text-gray-600 mt-2 text-sm md:text-base">
+  <div class="text-center mt-30 ">
+    <h1 class="font-Righteous text-[45px] text-[#323232]">
+      Top <span class="text-[#0e38cd]">Categories</span>
+    </h1>
+    <p class="font-Righteous text-[25px] text-[#4e596b] ">
       100+ unique online course list designs
     </p>
   </div>
@@ -271,58 +329,66 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 items-center">
 
     <!-- Category 1 -->
-    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+    <div
+      class=" font-Righteous bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
       <div class="p-4 rounded-lg text-white text-2xl mb-4">
         <img src="./images/div.features-box-image (2).svg" />
       </div>
-      <h3 class="font-semibold text-gray-800">Digital Marketing</h3>
-      <p class="text-gray-500 text-sm mt-1">25 Courses</p>
+      <h1 class="text-[20px] text-[#324361] px-8">
+        Digital Marketing
+      </h1>
+      <p class="text-[15px] text-[#4f547b]">25 Courses</p>
     </div>
 
     <!-- Category 2 -->
-    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+    <div
+      class="font-Righteous bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
       <div class="p-4 rounded-lg text-white text-2xl mb-4">
         <img src="./images/div.features-box-image (3).svg" />
       </div>
-      <h3 class="font-semibold text-gray-800">Web Development</h3>
-      <p class="text-gray-500 text-sm mt-1">16 Courses</p>
+       <h1 class="text-[20px] text-[#324361] px-8">Web Development</h1>
+      <p class="text-[15px] text-[#4f547b]">16 Courses</p>
     </div>
 
     <!-- Category 3 -->
-    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+    <div
+      class="font-Righteous bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
       <div class="p-4 rounded-lg text-white text-2xl mb-4">
         <img src="./images/div.features-box-image.svg" />
       </div>
-      <h3 class="font-semibold text-gray-800">Art & Humanities</h3>
-      <p class="text-gray-500 text-sm mt-1">76 Courses</p>
+       <h1 class="text-[20px] text-[#324361] px-8">Art & Humanities</h1>
+      <p class="text-[15px] text-[#4f547b]">76 Courses</p>
     </div>
 
     <!-- Category 4 -->
-    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+    <div
+      class="font-Righteous bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
       <div class="p-4 rounded-lg text-white text-2xl mb-4">
         <img src="./images/div.features-box-image (1).svg" />
       </div>
-      <h3 class="font-semibold text-gray-800">Personal Development</h3>
-      <p class="text-gray-500 text-sm mt-1">22 Courses</p>
+     <h1 class="text-[20px] text-[#324361] px-8">Personal Development</h1>
+      <p class="text-[15px] text-[#4f547b]">22 Courses</p>
     </div>
 
 
     <!-- Category 5 -->
-    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+    <div
+      class="font-Righteous bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
       <div class="p-4 rounded-lg text-white text-2xl mb-4">
         <img src="./images/div.features-box-image (4).svg" />
       </div>
-      <h3 class="font-semibold text-gray-800">IT and Software</h3>
-      <p class="text-gray-500 text-sm mt-1">110 Courses</p>
+       <h1 class="text-[20px] text-[#324361] px-8">IT and Software</h1>
+      <p class="text-[15px] text-[#4f547b]">110 Courses</p>
     </div>
 
     <!-- Category 6 -->
-    <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+    <div
+      class="font-Righteous bg-white rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
       <div class="p-4 rounded-lg text-white text-2xl mb-4">
         <img src="./images/div.features-box-image (5).svg" />
       </div>
-      <h3 class="font-semibold text-gray-800">Graphic Design</h3>
-      <p class="text-gray-500 text-sm mt-1">85 Courses</p>
+       <h1 class="text-[20px] text-[#324361] px-8">Graphic Design</h1>
+      <p class="text-[15px] text-[#4f547b]">85 Courses</p>
     </div>
 
   </div>
@@ -515,25 +581,25 @@
     </div>
 
     <!-- Social Icons -->
-    <div  class="bg-gradient-to-r from-purple-600 to-blue-600 text-[#000000] pt-12 pb-6 relative">
-    <div class="flex justify-center space-x-6 mt-10">
-      <a href="#" class="bg-white text-pink-500 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
-          src="./images/Instagram.svg" /></a>
-      <a href="#" class="bg-white text-green-500 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
-          src="./images/WhatsApp.svg" /></a>
-      <a href="#" class="bg-white text-blue-400 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
-          src="./images/Twitter.svg" /> </a>
-      <a href="#" class="bg-white text-blue-600 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
-          src="./images/LinkedIn.svg" /></a>
-      <a href="#" class="bg-white text-red-500 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
-          src="./images/YouTube (1).svg" /></a>
-    </div>
+    <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-[#000000] pt-12 pb-6 relative">
+      <div class="flex justify-center space-x-6 mt-10">
+        <a href="#" class="bg-white text-pink-500 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
+            src="./images/Instagram.svg" /></a>
+        <a href="#" class="bg-white text-green-500 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
+            src="./images/WhatsApp.svg" /></a>
+        <a href="#" class="bg-white text-blue-400 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
+            src="./images/Twitter.svg" /> </a>
+        <a href="#" class="bg-white text-blue-600 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
+            src="./images/LinkedIn.svg" /></a>
+        <a href="#" class="bg-white text-red-500 w-13 h-13 flex items-center justify-center rounded-full shadow"><img
+            src="./images/YouTube (1).svg" /></a>
+      </div>
 
-    <!-- Copyright -->
-    <p class="text-center text-sm text-white-500 mt-6 opacity-90">
-      Copyright © 2023 askmeidentity. All Rights Reserved
-    </p>
-  </div>
+      <!-- Copyright -->
+      <p class="text-center text-sm text-white-500 mt-6 opacity-90">
+        Copyright © 2023 askmeidentity. All Rights Reserved
+      </p>
+    </div>
   </div>
 </footer>
 
